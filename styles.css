@@ -107,3 +107,74 @@ header.hero {
 .footer p {
     margin: 0;
 }
+
+/* Mobile-Friendly Adjustments */
+@media (max-width: 768px) {
+    .hero-content h1 {
+        font-size: 2.2rem;
+    }
+
+    .hero-content p {
+        font-size: 1rem;
+        margin-bottom: 20px;
+    }
+
+    .cta-button {
+        font-size: 0.9rem;
+        padding: 8px 16px;
+    }
+
+    .services {
+        padding: 30px 15px;
+    }
+
+    .services h2 {
+        font-size: 1.8rem;
+        margin-bottom: 30px;
+    }
+
+    .service-item {
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .service-item img {
+        height: auto;
+    }
+
+    .contact {
+        padding: 30px 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-content h1 {
+        font-size: 1.8rem;
+    }
+
+    .hero-content p {
+        font-size: 0.9rem;
+    }
+
+    .cta-button {
+        font-size: 0.8rem;
+        padding: 6px 12px;
+    }
+
+    .service-list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .services h2 {
+        font-size: 1.6rem;
+    }
+
+    .service-item {
+        margin-bottom: 25px;
+    }
+
+    .contact a {
+        font-size: 1rem;
+    }
+}
