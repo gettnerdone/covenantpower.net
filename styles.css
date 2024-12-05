@@ -518,3 +518,14 @@ header.hero {
         font-size: 1rem;
     }
 }
+
+@media (min-width: 769px) {
+    .menu ul {
+        display: flex !important; /* Ensure it displays on larger screens */
+        flex-direction: row;
+        gap: 30px;
+        position: static; /* Reset positioning */
+        background: none; /* Remove background */
+        padding: 0; /* Remove extra padding */
+    }
+}
