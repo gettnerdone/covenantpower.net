@@ -55,6 +55,7 @@ body {
     border: none;
     cursor: pointer;
     z-index: 1100; /* Above the navigation */
+    margin-left: auto; /* Align to the right */
 }
 
 .hamburger div {
@@ -87,9 +88,20 @@ body {
 
 .menu ul {
     list-style: none;
+    display: none; /* Hidden by default */
+    flex-direction: column;
+    gap: 20px;
+    background-color: #333;
+    position: absolute;
+    top: 70px;
+    right: 0;
+    width: 100%;
+    padding: 20px;
+    z-index: 1000;
+}
+
+.menu ul.show {
     display: flex;
-    gap: 30px;
-    transition: all 0.3s ease;
 }
 
 .menu ul li {
@@ -423,7 +435,6 @@ header.hero {
     }
     .menu {
         position: relative;
-        flex-direction: column;
     }
 
     .menu ul {
