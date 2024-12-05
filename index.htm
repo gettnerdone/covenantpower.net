@@ -5,6 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Covenant Power LLC</title>
     <link rel="stylesheet" href="styles.css">
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const hamburger = document.querySelector(".hamburger");
+            const menu = document.querySelector(".menu ul");
+    
+            hamburger.addEventListener("click", () => {
+                hamburger.classList.toggle("open");
+                menu.classList.toggle("show");
+            });
+        });
+    </script>
+    
 </head>
 <body>
     <!-- Top header with logo and menu -->
@@ -13,6 +25,11 @@
             <div class="logo-container">
                 <img src="images/logo_white.png" alt="Covenant Power Logo" class="logo">
             </div>
+            <button class="hamburger">
+                <div></div>
+                <div></div>
+                <div></div>
+            </button>
             <nav class="menu">
                 <ul>
                     <li><a href="index.htm">Home</a></li>
@@ -22,7 +39,7 @@
             </nav>
         </div>
     </header>
-
+    
     <!-- Hero Section (unchanged) -->
     <header class="hero">
         <div class="hero-content">
