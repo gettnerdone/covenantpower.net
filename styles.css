@@ -56,6 +56,9 @@ body {
     cursor: pointer;
     z-index: 1100; /* Above the navigation */
     margin-left: auto; /* Align to the right */
+    position: absolute; /* Place it relative to the container */
+    right: 20px; /* Adjust distance from the right edge */
+    top: 20px; /* Align with top spacing */
 }
 
 .hamburger div {
