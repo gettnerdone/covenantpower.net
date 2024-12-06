@@ -374,6 +374,10 @@ header.hero {
     transition: background-color 0.3s;
 }
 
+.phonelink:hover {
+    color: black;
+}
+
 .call-to-action .cta-button:hover {
     background-color: #e67e22;
 }
